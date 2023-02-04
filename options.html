@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="options.css">
+    <title>NotiVeer</title>
+  </head>
+<body>
+    <div class="container mt-5">
+        <h1>Options</h1>
+        <form>
+            <div class="form-group">
+              <label for="line">Line</label>
+              <select class="form-control" id="line">
+                <option value="GVB_906_2,GVB_905_2">Centraal Station - NDSM</option>
+                <option value="GVB_906_1,GVB_905_1">NDSM - Centraal Station</option>
+                <option value="GVB_903_2">NDSM - Pontsteiger</option>
+                <option value="GVB_903_1">Pontsteiger - NDSM</option>
+                <option value="GVB_902_1">IJplein - Centraal Station</option>
+                <option value="GVB_902_2">Centraal Station - IJplein</option>
+                <option value="GVB_901_2">Centraal Station - Buiksloterweg</option>
+                <option value="GVB_901_1">Buiksloterweg - Centraal Station</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="delayInMinutes">Minutes before departure</label>
+                <input type="number" class="form-control" id="delayInMinutes" min="1">
+              </div>
+              <div class="form-group">
+                <label for="activeTime">Active after</label>
+                <input type="time" class="form-control" id="activeTime">
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="monday" value="Monday">
+                <label class="form-check-label" for="monday">Monday</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="tuesday" value="Tuesday">
+                <label class="form-check-label" for="tuesday">Tuesday</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="wednesday" value="Wednesday">
+                <label class="form-check-label" for="wednesday">Wednesday</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="thursday" value="Thursday">
+                <label class="form-check-label" for="thursday">Thursday</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="friday" value="Friday">
+                <label class="form-check-label" for="friday">Friday</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="saturday" value="Saturday">
+                <label class="form-check-label" for="saturday">Saturday</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="sunday" value="Sunday">
+                <label class="form-check-label" for="sunday">Sunday</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="form-check-label" id="countDown">
+                <label for="countDown">Show countdown on badge?</label>
+              </div>
+            <button type="submit" class="btn btn-primary" id="save" >Save</button>
+          </form>
+          <div id="status"></div>
+</div>
+<script src="options.js"></script>
+</body>
+</html>

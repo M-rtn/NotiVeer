@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "NotiVeer",
+    "version": "1.0",
+    "description": "Notifies you when the ferry is about to leave",
+    "icons": { 
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png" },
+    "action": { },
+    "options_page": "options.html",
+    "permissions": [
+        "alarms",
+        "notifications",
+        "storage"
+      ],
+      "host_permissions": ["http://v0.ovapi.nl/*"],
+      "background": {
+        "service_worker" : "background.js"
+      }
+}
